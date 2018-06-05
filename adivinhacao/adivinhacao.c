@@ -7,17 +7,21 @@ int main() {
   printf("\n   *     Bem vindo ao nosso jogo de adivinhacao     *   \n");
   printf("\n********************************************************\n");
   int numerosecreto = 42;
-  int chute;
-  printf("Qual é o seu chute ");
-  scanf("%d",&chute);
-  printf("\nSeu chute foi = %d\n",chute);
-  printf("%d %d",numerosecreto,chute);
+  int chute,tentativas;
 
-  if(chute==numerosecreto){
-    printf("\nVocê acertou !! Parabéns");
-    printf("\nVocê é um bom jogador\n");
-  }else{
-    printf("\nVocê errou!!\n");
+  for(tentativas=1;tentativas<=3;tentativas++){
+    printf("Qual e o seu chute ");
+    scanf("%d",&chute);
+    printf("\nSeu chute foi = %d\n",chute);
+    if(chute==numerosecreto){
+      printf("\nVoce acertou !! Parabens");
+      printf("\nVoce e um bom jogador\n");
+    }else if(chute>numerosecreto){
+      printf("\nVoce errou!!\n O numero e menor\n");
+    }else{
+      printf("\nVoce errou!!\n O numero e maior\n");
+    }
   }
+
   return 0;
 }
