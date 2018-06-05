@@ -16,6 +16,7 @@ int main() {
     if(chute==numerosecreto){
       printf("\nVoce acertou !! Parabens");
       printf("\nVoce e um bom jogador\n");
+      break;
     }else if(chute>numerosecreto){
       printf("\nVoce errou!!\n O numero e menor\n");
     }else{
