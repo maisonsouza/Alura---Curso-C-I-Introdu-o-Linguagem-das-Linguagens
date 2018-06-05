@@ -12,5 +12,12 @@ int main() {
   scanf("%d",&chute);
   printf("\nSeu chute foi = %d\n",chute);
   printf("%d %d",numerosecreto,chute);
+
+  if(chute==numerosecreto){
+    printf("\nVocê acertou !! Parabéns");
+    printf("\nVocê é um bom jogador\n");
+  }else{
+    printf("\nVocê errou!!\n");
+  }
   return 0;
 }
