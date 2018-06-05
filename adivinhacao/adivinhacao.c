@@ -7,6 +7,10 @@ int main() {
   printf("\n   *     Bem vindo ao nosso jogo de adivinhacao     *   \n");
   printf("\n********************************************************\n");
   int numerosecreto = 42;
-  printf("O numero secreto = %d",numerosecreto);
+  int chute;
+  printf("Qual é o seu chute ");
+  scanf("%d",&chute);
+  printf("\nSeu chute foi = %d\n",chute);
+  printf("%d %d",numerosecreto,chute);
   return 0;
 }
