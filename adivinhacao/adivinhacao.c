@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 
-int main() {	
+int main() {
   srand(time(NULL));
   int numerosecreto = rand()%1000;
   int chute,tentativas=0,numerodetentativas,nivel;
@@ -36,7 +36,7 @@ int main() {
     	numerodetentativas=7;
     	break;
   }
-  
+
  	for(tentativas=1;tentativas<=numerodetentativas;tentativas++){
 	 	printf("********************************************************\n");
 	  	printf("\nTentativa %d - \n",tentativas);
@@ -83,11 +83,11 @@ int main() {
 	    printf("       /_( \\__/ )_\\    \n");
 	    printf("          \\__U_/        \n");
 	    printf("\n\n\n");
-	   } 	
+	   }
 
     printf("********************************************************\n");
   }
     printf("O numero SECRETO era = %d",numerosecreto);
-  
+
   return 0;
 }
